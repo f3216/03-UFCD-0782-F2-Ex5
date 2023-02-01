@@ -6,9 +6,9 @@ expected_output_1="##############"
 expected_output_2="# Ola Mundo! #"
 expected_output_3="##############"
 
-output_line_1=$(echo "$program_output" | head -n 1)
-output_line_2=$(echo "$program_output" | head -n 2 | tail -n 1)
-output_line_3=$(echo "$program_output" | tail -n 1)
+output_line_1=$(echo "$output" | head -n 1)
+output_line_2=$(echo "$output" | head -n 2 | tail -n 1)
+output_line_3=$(echo "$output" | tail -n 1)
 
 if [ "$output_line_1" == "$expected_output_1" ] && [ "$output_line_2" == "$expected_output_2" ] && [ "$output_line_3" == "$expected_output_3" ] ; then
   echo "Aprovado: A saída é correcta"
